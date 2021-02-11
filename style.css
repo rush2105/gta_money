@@ -1,0 +1,215 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root{
+ --primary-font: 'Anton', sans-serif;
+  --body-font :   'Do Hyeon', sans-serif;;
+}
+
+body{
+	width: 100%;
+	min-height: 100vh;
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('wp1809628.jpg');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: var(--body-font);
+
+}
+
+
+header{
+	position: relative;
+ text-align: center;
+  min-height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	background: linear-gradient(rgba(102,89,75,0.7),rgba(102,89,75,0.7));
+
+}
+.slider{
+	position: absolute;
+	left: -65px;
+top: 125px;
+transform: rotate(90deg) scale(0);
+
+}
+
+.music.open .slider{
+transform: rotate(90deg) scale(1);
+}
+.logo-text{
+	font-size: 48px;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+	font-family: var(--primary-font);
+	color: #fff;
+}
+.logo-text span{
+	margin-top: 4px;
+}
+
+
+header .music{
+position: absolute;
+top: 50%;
+left: 15%;
+z-index: 111;
+transform: translateY(-50%);
+display: flex;
+width: 55px;
+height: 35px;
+cursor: pointer;
+
+}
+header .music span{
+	width: 5px;
+	background: #fff;
+	margin: 0 4px;
+	height: 35px;
+}
+header .music span.m-1,header .music span.m-3{
+	animation-name: spinner;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-delay: 3s; 
+}
+header .music span.m-2{
+	animation-name: spinner;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-delay: 1s; 
+}
+
+/*container*/
+
+.container{
+	padding: 25px 15px;
+	text-align: center;
+}
+.container .heading{
+  padding: 25px 5px;
+  background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)),url(123.jpg);
+  background-position: center;
+    background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+
+}
+.container .heading h4{
+  font-size: 48px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+
+}
+.container .heading h5{
+  font-size: 32px;
+
+}
+form{
+	padding: 25px 15px;
+	min-width: 350px;
+	width: 40%;
+	margin: 0 auto;
+
+	background: linear-gradient(rgba(102,89,75,0.7),rgba(102,89,75,0.7));
+
+
+}
+form label{
+	color: #fff;
+	font-weight: bold;
+	font-size: 24px;
+	display: block;
+	text-align: left;
+}
+form input,form select{
+	width: 100%;
+	padding: 12px 13px;
+	border:  2px solid #285d67;
+	border-radius: 5px;
+}
+
+form input[type="submit"]{
+	min-width: 100px;
+	max-width: 250px;
+	background: ;
+	color: #fff;
+	font-size: 26px;
+	background: #0b0209;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	font-weight: bold;
+	cursor: pointer;
+}
+form .single-field{
+	margin: 25px 0;
+}
+.submit-btn{
+	text-align: left;
+}
+
+@keyframes spinner{
+	0%{
+           height: 30px;
+	}
+	25%{
+           height: 0px;
+
+	}
+	50%{
+           height: 30px;
+
+	}
+	75%{
+           height: 0px;
+
+	}
+
+}
+
+
+@media (max-width: 480px){
+	.container{
+		padding-top: 100px;
+	}
+}
+
+img{
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+
+#munna{
+	display: none;
+}
+
+
+audio{
+	opacity: 0;
+	visibility: hidden;
+}
+
+.d{
+	font-size: 14px;
+	text-align: center;
+	padding: 25px 0;
+	margin: 80px 0;
+	color: #fff;
+}
+
+
+.music.close span{
+	animation: none !important;
+}
+#con.munna-aa form{
+display: none;
+}
+#con.munna-aa img{
+display: block;
+}
