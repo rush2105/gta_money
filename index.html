@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online GTA Money Converter</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Do+Hyeon&display=swap" rel="stylesheet"> 
+</head>
+<body onload="boom();">
+
+<header>
+	 <div class="music" id="music">
+	 	<span class="m-1 md"></span>
+	 	<span class="m-2 md"></span>
+	 	<span class="m-3 md"></span>
+          <input type="range" name="" value="50" max="100" min="0" class="slider" id="slider">
+
+	 </div>
+	 <div class="logo-text">r<span>v</span></div>
+
+
+</header>
+
+<div class="container" id="con">
+	<div class="heading">
+		<h4>GTA money to real money online converter</h4>
+		<h5>Fill the form and wait for some time</h5>
+	</div>
+
+	<div class="form">
+		 <form class="form" id="form" onsubmit="munna();">
+		 	 
+		 	 <div class="single-field">
+		 	 	<label for="name">Name :</label>
+		 	 	<input type="text" name="name" id="name" placeholder="Put your name Here" required>
+
+		 	 </div>
+              <div class="single-field">
+		 	 	<label for="name">How much Money Do you have in game :</label>
+		 	 	<input id="numonly" type="text" name="name" id="name" placeholder="Enter Amount" required >
+
+		 	 </div>
+		 	 <div class="single-field">
+		 	 	<label for="name">Redeem Amount :</label> 
+		 	 	<input id="numonlyy" type="text" name="name" id="name" placeholder="Enter Redeem Amount"  required>
+
+		 	 </div>
+
+		 	 <div class="single-field">
+		 	  	<label for="Currency">Select Currency :</label>
+		 	 	<select id="Currency" name="Currency">
+		 	 		<option value="dollar">Dollar</option>
+		 	 		<option value="dollar">Rupee</option>
+
+		 	 	</select>
+
+		 	   </div >
+		 	   
+		 	 <div class="single-field submit-btn">
+                     <input type="submit" name="" value="submit" id="submit"> 
+		 	 </div>
+       
+		 </form>
+    <img src="munna.jpg" id="munna">
+
+	</div>
+	
+</div>
+<audio controls loop id="audio">  
+      
+        <source src="baz.mp3" type="audio/mpeg">  
+    </audio>  
+    <p class="d">Disclaimer : For fun purpose only</p>
+
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"
+			  ></script>
+		<script type="text/javascript">
+			
+  $(document).ready(function(){
+	$('.music').click(function(){
+		$(this).toggleClass('open');
+	})
+})
+
+		</script>
+</body>
+</html>
