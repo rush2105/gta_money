@@ -177,6 +177,10 @@ form .single-field{
 	.container{
 		padding-top: 100px;
 	}
+	form{
+	 width: 85%;
+		min-width: auto;
+	}
 }
 
 img{
