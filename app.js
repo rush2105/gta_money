@@ -1,7 +1,7 @@
 function boom(){
 	let audio = document.getElementById('audio');
 	audio.play();
-	audio.volume = 0.1;
+	audio.volume = 1;
 };
 
 
